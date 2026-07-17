@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toolkit | Edgar Licea</title>
+<meta name="description" content="The custom Claude skills Edgar Licea has built and the MCP integrations he has connected: an AI operations toolkit for web publishing, GEO measurement, and marketing reporting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+
+<div class="wrap">
+  <nav class="nav">
+    <a class="logo" href="index.html">Edgar<em>.</em>Licea</a>
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="geo.html">GEO</a></li>
+      <li><a href="toolkit.html" aria-current="page">Toolkit</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="cs-hero">
+    <span class="kicker">Toolkit</span>
+    <h1>The skills I've built and the systems I've wired together</h1>
+    <div class="cs-meta">
+      <div><strong>Skills authored</strong>6 custom Claude skills in production</div>
+      <div><strong>Integrations</strong>9+ MCP connections across the marketing stack</div>
+      <div><strong>Status</strong>All running in real weekly workflows</div>
+    </div>
+  </header>
+
+  <div class="tldr">
+    <span class="tag">What this page is</span>
+    <p>Two quick definitions. A <strong>Claude skill</strong> is a reusable, documented AI workflow: instructions, rules, and quality guardrails packaged so the work runs the same way every time, for anyone. <strong>MCP</strong> (Model Context Protocol) is the open standard that connects an AI to real tools: analytics, spreadsheets, project boards, calendars. Skills are the recipes; MCP is the plumbing. I've built the recipes and installed the plumbing, and everything below is in active use.</p>
+  </div>
+
+  <section class="section" style="padding-top: 56px;">
+    <div class="section-head">
+      <h2>Custom skills I've authored</h2>
+      <span class="count">The CTO Studio publishing suite</span>
+    </div>
+  </section>
+
+  <div class="cards" style="padding-bottom: 24px;">
+    <div class="card">
+      <span class="tag">Orchestrator</span>
+      <h3>A tool that auto-publishes new guest profiles from one command: 51 pages live and counting</h3>
+      <p>Hand it a raw interview transcript and it runs the entire pipeline: delegates the writing, cleaning, and deploying to the specialized skills below, pauses only for human approval checkpoints, and finishes with the guest live on the site.</p>
+      <span class="proof"><span>Skill: publish-bio</span> · transcript in, live page out</span>
+    </div>
+    <div class="card">
+      <span class="tag">Content generation</span>
+      <h3>A tool that writes publish-ready web copy from every new interview recorded in SF and Austin: 74 transcripts and counting</h3>
+      <p>Reads the interview and produces every publish-ready field in one pass: multi-paragraph bio, emphasis-marked headline, notable quote, role, company, category, and URL slug, all in a consistent editorial voice.</p>
+      <span class="proof"><span>Skill: guest-bio</span> · every field, one pass</span>
+    </div>
+    <div class="card">
+      <span class="tag">Content production</span>
+      <h3>A tool that turns a raw interview transcript into an SEO-ready web page in minutes, not hours</h3>
+      <p>Strips timestamps, chit-chat, and filler, restores real speaker names, then bakes the cleaned conversation into the guest's page as static HTML that search engines and AI answer engines can read.</p>
+      <span class="proof"><span>Skill: transcript-clean</span> · SEO-ready long-form</span>
+    </div>
+    <div class="card">
+      <span class="tag">Build &amp; deploy</span>
+      <h3>A tool that lets the team update the live website from a spreadsheet: 481 deploys in 4 months</h3>
+      <p>Builds guest pages from the live content sheet and pushes them to GitHub, scoping each deploy to just the intended guests so nothing unrelated gets swept into a release. The manual override for the scheduled build.</p>
+      <span class="proof"><span>Skill: build-bio-pages</span> · scoped, safe deploys</span>
+    </div>
+    <div class="card">
+      <span class="tag">Content intelligence</span>
+      <h3>A searchable library that remembers and updates 70+ interviews (and counting)</h3>
+      <p>Mines each new interview for its strongest verbatim, attributed, timecoded quotes, tags them by theme in a shared bank, and marks lines as used after a video ships so nothing repeats. The archive's memory.</p>
+      <span class="proof"><span>Skill: quote-bank</span> · read once, reuse forever</span>
+    </div>
+    <div class="card">
+      <span class="tag">Video production</span>
+      <h3>A tool that turns a 70+ interview archive into weeks of news-pegged social video</h3>
+      <p>Matches the day's industry news against the quote bank and outputs a complete package: quick-cut montage script, editor's clip-pull sheet with timecodes, LinkedIn post copy, and a fact-check of the news peg.</p>
+      <span class="proof"><span>Skill: news-cut</span> · news to script in minutes</span>
+    </div>
+  </div>
+
+  <article class="prose" style="padding-top: 8px;">
+    <p class="note">These aren't six separate tools; they're one multi-agent publishing system. The orchestrator (publish-bio) delegates to specialized workers, one writes, one cleans, one deploys, each with its own guardrails, and the finished pages publish themselves to GitHub, where an automated build takes them live. No human touches HTML anywhere in the chain; people only approve. This system is live and working right now: 481 automated builds in four months, new interviews recording every week, and the count still climbing.</p>
+  </article>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="section-head">
+      <h2>MCP integrations I've connected</h2>
+      <span class="count">The plumbing behind the workflows</span>
+    </div>
+  </section>
+
+  <article class="prose" style="padding-top: 0;">
+    <h2 style="font-size: 1.3rem;">Measurement &amp; search</h2>
+    <ul>
+      <li><strong>Gauge</strong> - AI search visibility (ChatGPT, Perplexity, Gemini, AI Overviews), citation tracking, plus GA4 and Search Console reporting through one connection. The backbone of the GEO program.</li>
+    </ul>
+    <h2 style="font-size: 1.3rem;">Content &amp; data operations</h2>
+    <ul>
+      <li><strong>Google Drive</strong> - transcripts in, deliverables out; the pipeline's file layer.</li>
+      <li><strong>Airtable</strong> - production tracking for the interview pipeline: guests, deliverables, and publishing status.</li>
+      <li><strong>Browser automation (Playwright + Chrome)</strong> - hands-on-keyboard automation for the tools that don't have an API, plus visual QA of everything that ships.</li>
+    </ul>
+    <h2 style="font-size: 1.3rem;">Team &amp; program management</h2>
+    <ul>
+      <li><strong>ClickUp</strong> - task and program management, wired in so status updates write themselves.</li>
+      <li><strong>Slack</strong> - reporting summaries and updates delivered where the team already lives.</li>
+      <li><strong>Google Calendar</strong> - scheduling context for program timelines.</li>
+    </ul>
+    <h2 style="font-size: 1.3rem;">Outreach</h2>
+    <ul>
+      <li><strong>Email and LinkedIn outreach platforms</strong> - campaign management and reporting for outbound programs, connected to the same reporting rhythm as everything else.</li>
+    </ul>
+    <p>The pattern across all of it: connect the tool once, encode the process as a skill, and let the AI do the ferrying between systems that people used to do by hand.</p>
+  </article>
+
+  <nav class="next">
+    <a href="index.html#work"><span class="dir">Back</span>All work</a>
+    <a href="about.html" style="text-align:right"><span class="dir">Next</span>About Edgar</a>
+  </nav>
+</div>
+
+</body>
+</html>

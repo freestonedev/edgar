@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Study: A Content Intelligence System | Edgar Licea</title>
+<meta name="description" content="How I built a timecoded quote bank and an AI workflow that turns breaking news into ready-to-edit interview montage scripts for LinkedIn video.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=3">
+</head>
+<body>
+
+<div class="wrap">
+  <nav class="nav">
+    <a class="logo" href="../index.html">Edgar<em>.</em>Licea</a>
+    <ul>
+      <li><a href="../index.html#work" aria-current="page">Work</a></li>
+      <li><a href="../geo.html">GEO</a></li>
+      <li><a href="../toolkit.html">Toolkit</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="cs-hero">
+    <span class="kicker">Case Study · CTO Studio</span>
+    <h1>A quote bank that turns news into video scripts</h1>
+    <div class="cs-meta">
+      <div><strong>Role</strong>Senior program manager &amp; builder</div>
+      <div><strong>For</strong>CTO Studio video production</div>
+      <div><strong>Timeline</strong>2026 – ongoing</div>
+      <div><strong>Stack</strong>Claude skills, Google Sheets, interview transcript archive</div>
+    </div>
+  </header>
+
+  <div class="tldr">
+    <span class="tag">TL;DR</span>
+    <p>An interview archive is only as valuable as your ability to find the right 15 seconds in it. I built a two-part content intelligence system: a quote bank that indexes every interview once into timecoded, attributed, theme-tagged quotes, and a news-cut workflow that matches breaking industry news against that bank and outputs a complete video package: script, editor's clip-pull sheet with timecodes, LinkedIn post copy, and a fact-check of the news peg.</p>
+  </div>
+
+  <article class="prose">
+    <h2>Why it exists</h2>
+    <p>Interviews launch on their own schedule; the audience's attention doesn't. Between new episodes, the brand still needs to show up in the feeds of the technical leaders it's building relationships with, and nothing earns that attention like their peers reacting to the news of the week. News-pegged montage video does that, and it makes the interview archive a compounding asset instead of a back catalog: every quote resurfaced is another leader's face and ideas put back in front of the exact audience that matters.</p>
+
+    <h2>The problem</h2>
+    <p>CTO Studio's archive holds dozens of long-form interviews with engineering leaders. That's a goldmine for news-pegged social video, but the old way to mine it was to re-read entire transcripts every time news broke, hunting for the three or four leaders who said something relevant. By the time you found the quotes, the news cycle had moved on. The archive was growing faster than anyone's ability to remember what was in it.</p>
+
+    <h2>What I built</h2>
+    <p>Two AI workflows that share one asset:</p>
+    <ol class="flow">
+      <li><div><strong>The quote bank.</strong> When a new interview lands, an indexing workflow reads the transcript once and extracts the strongest stand-alone lines: verbatim, attributed, timecoded, and tagged by theme. The rows append to a shared Google Sheet the whole team can browse.</div></li>
+      <li><div><strong>The news-cut generator.</strong> When a story breaks, a second workflow searches the bank by theme instead of re-reading transcripts, selects quotes from three to five different leaders, and assembles a square, quick-cut montage script built for LinkedIn.</div></li>
+      <li><div><strong>The editor's handoff.</strong> The output includes a clip-pull sheet with exact timecodes per quote, so the video editor goes straight from script to timeline with no searching.</div></li>
+      <li><div><strong>The guardrails.</strong> Every cut ships with a fact-check of the news framing, and used lines get marked in the bank so quotes don't repeat across videos.</div></li>
+    </ol>
+
+    <h2>Results</h2>
+    <div class="results">
+      <div><div class="num">1×</div><div class="label">Each transcript is read once, ever</div></div>
+      <div><div class="num">Minutes</div><div class="label">From news story to ready-to-edit script</div></div>
+      <div><div class="num">3–5</div><div class="label">Leaders' voices per cut, verbatim and attributed</div></div>
+    </div>
+    <ul>
+      <li>News-pegged video went from "not worth the digging" to a repeatable production lane.</li>
+      <li>Quote accuracy is enforced by design: only verbatim, attributed lines from the bank make it into a script.</li>
+      <li>The archive compounds: every new interview makes the system smarter instead of making search harder.</li>
+    </ul>
+
+    <h2>What this demonstrates</h2>
+    <ul>
+      <li><strong>Content operations thinking:</strong> the insight isn't the script generator, it's the index. Structure the asset once, and every downstream workflow gets fast.</li>
+      <li><strong>Editorial judgment encoded into automation:</strong> attribution, verbatim accuracy, fact-checking, and no-repeat rules are built into the workflow, not left to memory.</li>
+      <li><strong>Cross-functional handoffs:</strong> the system's output is designed around the editor's actual job, timecodes and all.</li>
+    </ul>
+
+    <p class="note">Process and architecture are described from my own work. Quote bank contents, guest quotes, and internal performance data are intentionally not shown.</p>
+  </article>
+
+  <nav class="next">
+    <a href="publishing-pipeline.html"><span class="dir">Previous</span>A website that publishes itself</a>
+    <a href="ai-reporting.html" style="text-align:right"><span class="dir">Next case study</span>Marketing reporting for the AI-search era</a>
+  </nav>
+</div>
+
+</body>
+</html>
