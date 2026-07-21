@@ -70,7 +70,8 @@ a { color: inherit; }
 }
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3.6rem);
-  max-width: 18ch;
+  max-width: 26ch;
+  line-height: 1.15;
   text-wrap: balance;
 }
 .hero h1 .u {
@@ -201,7 +202,7 @@ a { color: inherit; }
   gap: 28px;
 }
 .cs-hero .kicker { text-align: center; }
-.cs-hero h1 { font-size: clamp(2rem, 4.4vw, 3.8rem); max-width: 20ch; text-wrap: balance; line-height: 1.18; }
+.cs-hero h1 { font-size: clamp(2rem, 4vw, 3.6rem); max-width: 26ch; text-wrap: balance; line-height: 1.15; }
 .cs-meta {
   display: flex; flex-wrap: wrap; gap: 12px 36px;
   margin-top: 30px; font-size: 0.88rem;
