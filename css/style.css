@@ -71,6 +71,7 @@ a { color: inherit; }
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3.6rem);
   max-width: 18ch;
+  text-wrap: balance;
 }
 .hero h1 .u {
   font-style: italic;
@@ -81,6 +82,7 @@ a { color: inherit; }
   color: var(--muted);
   line-height: 1.7;
   max-width: 52ch;
+  text-wrap: balance;
 }
 .hero .lede strong { color: var(--ink); }
 @media (max-width: 860px) {
