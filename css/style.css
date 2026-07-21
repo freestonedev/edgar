@@ -260,10 +260,9 @@ a { color: inherit; }
 .about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 56px; padding: 64px 0; align-items: start; }
 .headshot {
   aspect-ratio: 4/5; border: 2px solid var(--ink); background: var(--card);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--muted); font-size: 0.9rem; text-align: center; padding: 20px;
+  overflow: hidden;
 }
-.headshot img { width: 100%; height: 100%; object-fit: cover; }
+.headshot img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* ---------- Footer ---------- */
 footer {
