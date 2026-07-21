@@ -191,8 +191,16 @@ a { color: inherit; }
 @media (max-width: 860px) { .defs { grid-template-columns: 1fr; } }
 
 /* ---------- Case study pages ---------- */
-.cs-hero { padding: 72px 0 48px; border-bottom: 2px solid var(--ink); }
-.cs-hero h1 { font-size: clamp(2.2rem, 5vw, 4rem); max-width: 20ch; }
+.cs-hero {
+  padding: 72px 0 56px;
+  border-bottom: 2px solid var(--ink);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.cs-hero h1 { font-size: clamp(2rem, 4.4vw, 3.8rem); max-width: 20ch; text-wrap: balance; }
 .cs-meta {
   display: flex; flex-wrap: wrap; gap: 12px 36px;
   margin-top: 30px; font-size: 0.88rem;
@@ -210,7 +218,7 @@ a { color: inherit; }
 .tldr .tag { color: var(--accent); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; }
 .tldr p { margin-top: 10px; font-size: 1.12rem; line-height: 1.6; }
 
-.prose { max-width: 72ch; padding: 40px 0; }
+.prose { max-width: 72ch; padding: 40px 0; margin: 0 auto; }
 .prose h2 {
   font-size: clamp(1.6rem, 3vw, 2.3rem);
   margin: 44px 0 18px;
@@ -245,6 +253,13 @@ a { color: inherit; }
   display: flex; gap: 18px; align-items: baseline;
   padding: 16px 0; border-bottom: 1px solid var(--rule);
   margin: 0 !important;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.flow li.revealed {
+  opacity: 1;
+  transform: none;
 }
 .flow li::before {
   content: counter(step, decimal-leading-zero);
