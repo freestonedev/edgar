@@ -16,11 +16,11 @@
   <nav class="nav">
     <a class="logo" href="../index.html">Edgar<em>.</em>Licea</a>
     <ul>
+      <li><a href="../about.html">About</a></li>
       <li><a href="../index.html#work" aria-current="page">Work</a></li>
       <li><a href="../geo.html">GEO</a></li>
       <li><a href="../toolkit.html">Toolkit</a></li>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -88,5 +88,18 @@
   </nav>
 </div>
 
+<script>
+  const items = document.querySelectorAll('.flow li');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const idx = Array.from(items).indexOf(entry.target);
+        setTimeout(() => entry.target.classList.add('revealed'), idx * 110);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  items.forEach(item => observer.observe(item));
+</script>
 </body>
 </html>
